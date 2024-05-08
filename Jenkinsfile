@@ -10,13 +10,13 @@ pipeline {
         
         stage('Build') {
             steps {
-                sh 'python setup.py build'
+                sh 'python3 setup.py build'
             }
         }
 
         stage('Execute Python Script') {
             steps {
-                sh 'python test.py'
+                sh 'python3 test.py'
             }
         }
     }
